@@ -10,12 +10,7 @@ public class Points {
         this.x3=  x3;
         this.y3=  y3;
     }
-    public boolean IsStraightLine() {
-        double area = Math.abs((x1*(y2-y3)+x2*(y1-y3) + x3*(y1-y2))/2);
-        if( area == 0 )
-            return true;
-        else return false;
-    }
+
 
     public double Side1() {
         double side1 = Math.pow(Math.pow(x1-x2,2)+Math.pow(y1-y2,2),0.5);

@@ -20,13 +20,14 @@ public class Triangle {
 
 
     public String area () {
+
         if (this.isValidTriangle()) {
             double s = ( a + b + c ) / 2;
             double area = Math.pow(s * ( s - a ) * ( s - b ) * ( s - c ), 0.5);
             String areaStr = String.format("%.2f", area);
             //System.out.println("The area of input Triangle is:" + areaStr ); }
             return areaStr;
-        } else return "In valid input";
+        } else return "Invalid input";
     }
     @Override
     public String toString(){
